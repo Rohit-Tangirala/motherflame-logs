@@ -1,0 +1,233 @@
+.sectionContainer {
+  margin-top: 5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 3rem;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.loginPrompt {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  border-radius: 2px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.loginLink {
+  color: #ea580c;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.form {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 110px;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.6;
+  resize: vertical;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #ea580c;
+}
+
+.btnSubmit {
+  align-self: flex-end;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  padding: 0.65rem 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btnSubmit:hover {
+  background-color: #ea580c;
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Comment Item specific styling to keep structure nested clean */
+.commentItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.commentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.commenterInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.name {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #111111;
+}
+
+.date {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.body {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: #262626;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  padding-left: calc(32px + 0.75rem);
+}
+
+.commentActions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding-left: calc(32px + 0.75rem);
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.actionBtn {
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.1s ease;
+}
+
+.actionBtn:hover {
+  color: #ea580c;
+}
+
+.deleteBtn {
+  color: #ef4444;
+}
+
+.deleteBtn:hover {
+  color: #b91c1c;
+}
+
+.repliesContainer {
+  margin-left: calc(32px + 0.75rem);
+  padding-left: 1.5rem;
+  border-left: 1.5px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.replyForm {
+  margin-top: 0.75rem;
+  margin-left: calc(32px + 0.75rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.replyTextarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  background-color: #ffffff;
+}
+
+.replyTextarea:focus {
+  outline: none;
+  border-color: #ea580c;
+}
+
+.replyButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.btnCancel {
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0.4rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btnCancel:hover {
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Blog Platform",
+  "description": "A distraction-free editorial blog platform with threaded nested comment discussions and rich text composition.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
